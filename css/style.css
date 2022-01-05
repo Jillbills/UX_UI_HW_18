@@ -1,0 +1,116 @@
+/* TEXT/FONT/COPY Styles */
+
+
+
+/* BUTTON/ASSETS STYLES */
+
+
+
+
+/* NAV STYLES */
+.logo {
+    margin-left: 2rem;
+}
+
+li {
+    display: inline;
+    padding: 1rem;
+}
+
+.navigation {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inline {
+    text-align: right;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+}
+
+.navLinks {
+    color: #333B7E;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    vertical-align: middle; 
+    text-decoration-style:none;
+    margin-top: 0.5rem;
+}
+
+
+
+
+/* FLEXBOX Styles */
+
+
+
+
+/* FOOTER Styles */
+.footer {
+    background-color: #6667AB;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.connectIcons {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+.emailWithIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.emailText {
+    color: #F1F0F4;
+    padding-left: 2rem;
+}
+
+.LinkedInWithIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.LinkedInText {
+    color: #F1F0F4;
+    padding-left: 2rem;
+}
+
+.footer button {
+/* I want to center this in the div */
+    border: 3px solid #ECE5BA;
+    border-radius: 4px;
+    color: #ECE5BA;
+    box-sizing: border-box;
+    background-color: #6667AB;
+    margin-top: 1rem;
+}
+
+.footer button:hover {
+    background: #F1F0F4;
+    color: #6667AB;
+    border-color: #F1F0F4;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 2rem;
+}
