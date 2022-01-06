@@ -54,8 +54,8 @@ p {
     line-height: 28px;
 }
 
-.h2r {
-   text-align: right;
+.h3r {
+   text-align: center;
 }
 
 .header3 {
@@ -254,16 +254,41 @@ li {
 
 
 /* OUR TEAM section */
+.ourTeam {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 3rem;
+}
 
+.teamCopy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+/* Try Left aligning the bulleted list with rest of Our Team text  */
+.teamList {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 28px;
+    margin-left: -2rem;
+}
 
-
-
-/* DESIGN TOOLS and PHASES section */
-.designToolsIcons {
-    text-align: right;
+.copy {
     margin-right: 2rem;
 }
 
+/* DESIGN TOOLS and PHASES section */
+.designToolsIcons {
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.designPhasesIcons {
+    text-align: center;
+}
 
 
 
