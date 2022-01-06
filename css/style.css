@@ -360,6 +360,56 @@ li {
     margin-block-end: 0;
 }
 
+.ideationGrid {
+    display: grid;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "EYstoryboard1 ideationCopy1"
+    "EYstoryboard2 ideationCopy2"
+    "EYstoryboard3 EYstoryboard4"
+    ;
+}
+
+.EYstoryboard1 {
+    grid-area: EYstoryboard1;
+}
+
+.EYstoryboard2 {
+    grid-area: EYstoryboard2;
+}
+
+.EYstoryboard3 {
+    grid-area: EYstoryboard3;
+}
+
+.EYstoryboard4 {
+    grid-area: EYstoryboard4;
+}
+
+.ideationCopy1 {
+    grid-area: ideationCopy1;
+    padding-left: 2rem;
+}
+
+.ideationCopy2 {
+    grid-area: ideationCopy2;
+    padding-left: 2rem;
+}
+
+.ideationList {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -2%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
 
 
 /* PROTOTYPING section */
