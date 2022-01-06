@@ -36,6 +36,16 @@ h4 {
     margin-block-start: 0;
 }
 
+h5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -2%;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
 h6 {
     color: #6667AB;
     font-family: 'Raleway', sans-serif;
@@ -77,6 +87,13 @@ p {
 
 strong {
     color: #6667AB;
+}
+
+.listText {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 28px;
 }
 
 /* How do I change the form text/font style for the Yes/No responses? */
@@ -268,12 +285,11 @@ li {
     margin-right: 2rem;
 }
 
-.teamList {
+.listTest {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: normal;
     line-height: 28px;
-    margin-left: -2rem;
 }
 
 .copy {
@@ -306,6 +322,25 @@ li {
     text-align: left;
 }
 
+.definitionRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.definitionCopy {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.h5Definition {
+    text-align: right;
+}
+
+.lightbulbImg {
+    width: 40%;
+    margin-left: 3rem;
+}
 
 
 
@@ -343,6 +378,14 @@ li {
 }
 
 
+
+.h1ThankYou {
+    text-align: right;
+}
+
+.h4ThankYou {
+    text-align: right;
+}
 
 /* FLEXBOX Styles */
 
