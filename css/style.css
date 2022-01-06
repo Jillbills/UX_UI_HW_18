@@ -206,6 +206,66 @@ li {
 
 
 
+/* PROJECT OVERVIEW section */
+/* Project Intro and About Educate Ya */
+.caseStudyIntro {
+    display: flex;
+    flex-direction: column;
+}
+
+.EducateYaAbout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 3rem;
+}
+
+.educateYaPrototype {
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.educateYaSummary {
+    width: 50%;
+    flex-grow: 1;
+    margin-left: 2rem;
+    margin-right: 3rem;
+}
+/* Project Overview */
+.projectOverview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 2rem;
+    margin-left: 3rem;
+}
+
+.projectSummary {
+    width: 50%;
+    flex-grow: 1;
+    margin-left: 3rem;
+    margin-right: 2rem;
+}
+
+.beforeRedesign {
+    align-items: center;
+    margin-left: 3rem;
+}
+
+
+/* OUR TEAM section */
+
+
+
+
+/* DESIGN TOOLS and PHASES section */
+.designToolsIcons {
+    text-align: right;
+    margin-right: 2rem;
+}
+
+
+
 
 /* FLEXBOX Styles */
 
