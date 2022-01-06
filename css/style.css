@@ -267,7 +267,7 @@ li {
     justify-content: space-between;
     margin-right: 2rem;
 }
-/* Try Left aligning the bulleted list with rest of Our Team text  */
+
 .teamList {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
@@ -277,8 +277,10 @@ li {
 }
 
 .copy {
+    width: 50%;
     margin-right: 2rem;
 }
+
 
 /* DESIGN TOOLS and PHASES section */
 .designToolsIcons {
@@ -288,6 +290,56 @@ li {
 
 .designPhasesIcons {
     text-align: center;
+}
+
+
+
+/* UX RESEARCH section */
+.h1UXresearch {
+    text-align: left;
+}
+
+
+
+/* DEFINITION section */
+.h1Definition {
+    text-align: left;
+}
+
+
+
+
+/* IDEATION section */
+.h1Ideation {
+    text-align: left;
+}
+
+
+
+/* PROTOTYPING section */
+.h1Prototyping {
+    text-align: left;
+}
+
+
+
+/* USABILITY TESTING section */
+.h1UsabilityTesting {
+    text-align: left;
+}
+
+
+
+/* FINAL PROTOTYPE section */
+.h1FinalPrototype {
+    text-align: left;
+}
+
+
+
+/* CONCLUSION section */
+.h1Conclusion {
+    text-align: left;
 }
 
 
