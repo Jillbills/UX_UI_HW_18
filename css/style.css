@@ -312,44 +312,54 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    transform: scale(1.25);
     /* transition: all 0.3s  ease-in-out; */
 }
+/* .phaseIcon01 {
+    transform: scale(1.25);
+} */
 
 .phaseIcon01:hover {
-    animation: spin 1s 3;
+    animation: spin 0.7s 1;
 }
 
 .phaseIcon02:hover {
-    animation: spin 1s 3;
+    animation: spin 0.7s 1;
 }
 
 .phaseIcon03:hover {
-    animation: spin 1s 3;
+    animation: spin 0.7s 1;
 }
 
 .phaseIcon04:hover {
-    animation: spin 1s 3;
+    animation: spin 0.7s 1;
 }
 
 .phaseIcon05:hover {
-    animation: spin 1s 3;
+    animation: spin 0.7s 1;
 }
 
 .phaseIcon06:hover {
-    animation: spin 1s 3;
+    animation: spin 0.7s 1;
 }
 
 
 
 @keyframes spin {
     from {
-    transform: rotate(15deg);
+    transform: rotate(0deg) scale(1.25);
+    /* transform: scale(1.25); */
     }
     50% {
-    transform: rotate(-5deg);
+    transform: rotate(10deg) scale(1.3);
+    /* transform: scale(1.25); */
+    }
+    75% {
+    transform: rotate(-5deg) scale(1.3);
     }
     to {
-    transform: rotate(0deg);
+    transform: rotate(0deg) scale(1.25);
+    /* transform: scale(1.25); */
     }
   }
 
@@ -566,19 +576,26 @@ li {
     margin-block-end: 0;
 }
 
-
-
 .h1ThankYou {
     text-align: right;
+    margin-right: 2rem;
     margin-block-start: 0;
     margin-block-end: 0;
 }
 
 .h4ThankYou {
     text-align: right;
+    margin-right: 2rem;
     margin-block-start: 0;
     margin-block-end: 0;
 }
+
+.listText {
+
+}
+
+
+
 
 /* FLEXBOX Styles */
 
