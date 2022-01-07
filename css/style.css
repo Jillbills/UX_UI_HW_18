@@ -1,6 +1,6 @@
 /* TEXT/FONT/COPY Styles */
 h1 {
-    color: #333B7E;
+    color: #002a44;
     font-family: 'Oswald', sans-serif;
     font-size: 76px;
     font-weight: bold;
@@ -16,9 +16,10 @@ h2 {
     font-weight: 800;
     line-height: 68px;
 }
-
+/* dark red hex #540408 
+gray hex #4c5064*/
 h3 {
-    color: #4C5064;
+    color: #540408;
     font-family: 'Raleway', sans-serif;
     font-size: 48px;
     font-weight: 600;
@@ -47,7 +48,7 @@ h5 {
 }
 
 h6 {
-    color: #6667AB;
+    color: #c61f4b;
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -69,7 +70,7 @@ p {
 }
 
 .header3 {
-    color: #4C5064;
+    color: #540408;
     font-family: 'Raleway', sans-serif;
     font-size: 48px;
     font-weight: 600;
@@ -77,7 +78,7 @@ p {
 }
 
 .header4 {
-    color: #6667AB;
+    color: #c61f4b;
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     font-weight: 600;
@@ -86,7 +87,8 @@ p {
 }
 
 strong {
-    color: #6667AB;
+    /* color: #c61f4b; */
+    color: #540408;
 }
 
 .listText {
@@ -139,9 +141,9 @@ strong {
 
 /* BUTTON/ASSETS STYLES */
 button {
-    border: 3px solid #6667AB;
+    border: 3px solid #c61f4b;
     border-radius: 4px;
-    color: #6667AB;
+    color: #c61f4b;
     box-sizing: border-box;
     background-color: transparent;
     font-style: 'Inter'; sans-serif;
@@ -159,9 +161,9 @@ button {
 }
 
 button:hover {
-    background-color: #6667AB;
+    background-color: #c61f4b;
     color: #F1F0F4;
-    border: 3px solid #6667AB;
+    border: 3px solid #c61f4b;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
@@ -593,6 +595,23 @@ li {
     margin-block-end: 0;
 }
 
+.finalPrototypeGrid {
+    display: grid;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "desktopMockup desktopMockup"
+    "desktopMockup mobileMockup"
+    "desktopMockup mobileMockup"
+    "prototypeButton mobileMockup"
+    ;
+}
+
+
+
+
 
 
 /* CONCLUSION section */
@@ -610,6 +629,7 @@ li {
 }
 
 .h4ThankYou {
+    color: #c61f4b;
     text-align: right;
     margin-right: 2rem;
     margin-block-start: 0;
