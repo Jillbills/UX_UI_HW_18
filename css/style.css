@@ -558,6 +558,32 @@ li {
     margin-block-end: 0;
 }
 
+.usabilityTestingGrid {
+    display: grid;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "usabilityTestingCopy usabilityTestingCopy "
+    "usabilityTestingMobile usabilityTestingDesktop"
+    ;
+}
+
+.usabilityTestingCopy {
+    grid-area: usabilityTestingCopy;
+}
+
+.usabilityTestingMobile {
+    grid-area: usabilityTestingMobile;
+}
+
+.usabilityTestingDesktop {
+    grid-area: usabilityTestingDesktop;
+}
+
+
+
 
 
 /* FINAL PROTOTYPE section */
