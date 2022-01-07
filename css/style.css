@@ -156,7 +156,6 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem 2rem;
 }
 
 button:hover {
@@ -171,14 +170,13 @@ button:hover {
     font-size: 1.25rem;
     line-height: 1.5rem;
     text-align: center;
-    padding: 0.5rem 2rem;
     margin-right: 1rem;
+    /* transition: background-color 0.5s ease-in; */
     /* Use these properties below??? */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem 2rem;
 }
 
 
@@ -307,12 +305,67 @@ li {
 .h1DesignPhases {
     margin-block-start: 0;
     margin-block-end: 0;
+
 }
 
 .designPhasesIcons {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* transition: all 0.3s  ease-in-out; */
 }
 
+.phaseIcon01:hover {
+    animation: spin 1s 3;
+}
+
+.phaseIcon02:hover {
+    animation: spin 1s 3;
+}
+
+.phaseIcon03:hover {
+    animation: spin 1s 3;
+}
+
+.phaseIcon04:hover {
+    animation: spin 1s 3;
+}
+
+.phaseIcon05:hover {
+    animation: spin 1s 3;
+}
+
+.phaseIcon06:hover {
+    animation: spin 1s 3;
+}
+
+
+
+@keyframes spin {
+    from {
+    transform: rotate(15deg);
+    }
+    50% {
+    transform: rotate(-5deg);
+    }
+    to {
+    transform: rotate(0deg);
+    }
+  }
+
+
+/* 
+  @keyframes bounceArrow {
+    from {
+      margin-top: 0px;
+    }
+    50% {
+      margin-top: 7px;
+    }
+    to {
+      margin-top: 0px;
+    }
+  }  */
 
 
 /* UX RESEARCH section */
@@ -358,6 +411,9 @@ li {
     flex-direction: column;
 }
 
+.redlineNumbers {
+    color: #EE0303;
+}
 .nextWe {
     display: flex;
     flex-direction: row;
