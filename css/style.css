@@ -440,6 +440,12 @@ li {
     margin-left: 3rem;
 }
 
+.protoPersonaImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 /* This insights list font size is same as h5  */
 .insightsList {
     color: #4C5064;
@@ -528,6 +534,8 @@ li {
 
 .EYstoryboard4 {
     grid-area: EYstoryboard4;
+    animation: spin2 5s;
+    animation-iteration-count: 25;
 }
 
 .ideationCopy1 {
@@ -552,7 +560,25 @@ li {
 
 .EYstoryboard5 {
     margin-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
+@keyframes spin2 {
+    from {
+    transform: rotate(0deg);
+    }
+    50% {
+    transform: rotate(360deg);
+    }
+    75% {
+    transform: rotate(-5deg);
+    }
+    to {
+    transform: rotate(0deg);
+    }
+  }
 
 
 
@@ -573,6 +599,12 @@ li {
     width: 80%;
 }
 
+.userFlowImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .sketchesCopy {
     width: 80%;
 }
@@ -580,6 +612,13 @@ li {
 .earlyPrototyping {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+
+.UIstyleGuide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 
@@ -616,6 +655,11 @@ li {
     grid-area: usabilityTestingDesktop;
 }
 
+.usabilityImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 
 
@@ -641,7 +685,18 @@ li {
     ;
 }
 
+/* Trying to get my images to overlap but not over text  */
+.desktopMockup {
+    position: absolute;
+    z-index: -1;
+}
 
+.mobileMockup {
+    position: absolute;
+    right: 0px;
+    margin-right: 8%;
+    margin-top: 3rem;
+}
 
 
 
