@@ -711,6 +711,9 @@ li {
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
+    padding-left: 30%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 
