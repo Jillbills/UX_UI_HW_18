@@ -249,6 +249,10 @@ li {
     margin-right: 3rem;
 }
 /* Project Overview */
+.h3projectOverview {
+    margin-left: 3rem;
+}
+
 .projectOverview {
     display: flex;
     flex-direction: row;
@@ -257,17 +261,18 @@ li {
     margin-left: 3rem;
 }
 
-.projectSummary {
+.theProblem {
     width: 50%;
     flex-grow: 1;
-    margin-left: 3rem;
     margin-right: 2rem;
 }
 
-.beforeRedesign {
-    align-items: center;
-    margin-left: 3rem;
+.theSolution {
+    width: 50%;
+    flex-grow: 1;
+    margin-right: 2rem;
 }
+
 
 
 /* OUR TEAM section */
@@ -430,7 +435,34 @@ li {
     display: flex;
     flex-direction: row;
     width: 50% 50%;
+    flex-grow: 1;
+    margin-right: 2rem;
+    margin-left: 3rem;
 }
+
+/* This insights list font size is same as h5  */
+.insightsList {
+    color: #4C5064;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -2%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.h5strong {
+    color: #540408;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -2%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 
 
 /* DEFINITION section */
@@ -621,6 +653,11 @@ li {
     margin-block-end: 0;
 }
 
+.conclusion {
+    display: flex;
+    flex-direction: column;
+}
+
 .h1ThankYou {
     text-align: right;
     margin-right: 2rem;
@@ -636,9 +673,6 @@ li {
     margin-block-end: 0;
 }
 
-.listText {
-
-}
 
 
 
