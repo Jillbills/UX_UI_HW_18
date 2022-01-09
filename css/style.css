@@ -7,6 +7,7 @@ h1 {
     line-height: 84px;
     text-transform: uppercase;
     text-align: center; 
+    margin-left: 2rem;
 }
 
 h2 {
@@ -25,6 +26,11 @@ h3 {
     font-weight: 600;
     margin-block-start: 0;
     margin-block-end: 0;
+}
+
+.h3subheader {
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 h4 {
@@ -471,6 +477,8 @@ button:hover {
     font-weight: normal;
     line-height: 28px;
     letter-spacing: -2%;
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-block-start: 0;
     margin-block-end: 0;
 }
@@ -506,6 +514,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     width: 60%;
+    margin-left: 2rem;
 }
 
 .h5Definition {
@@ -515,6 +524,7 @@ button:hover {
 .lightbulbImg {
     width: 40%;
     margin-left: 3rem;
+    margin-right: 2rem;
 }
 
 
@@ -612,6 +622,11 @@ button:hover {
 .prototyping {
     display: flex;
     flex-direction: column;
+}
+
+.prototypeFlexbox {
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .IACopy {
