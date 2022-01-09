@@ -188,10 +188,10 @@ button:hover {
     margin-left: 2rem;
 }
 
-li {
+/* li {
     display: inline;
     padding: 1rem;
-}
+} */
 
 .navigation {
     padding: 0;
@@ -199,17 +199,24 @@ li {
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 
+.topNav {
+    align-items: flex-end;
+    margin-right: 3rem;
+    margin-top: 3rem;
+}
+
 .inline {
+    display: inline;
     text-align: right;
     justify-content: flex-end;
-    margin-right: 2rem;
-    margin-top: 1.5rem;
 }
 
 .navLinks {
+    display: inline;
     color: #333B7E;
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
@@ -290,7 +297,7 @@ li {
     margin-right: 2rem;
 }
 
-.listTest {
+.listText {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: normal;
@@ -448,9 +455,10 @@ li {
 
 /* This insights list font size is same as h5  */
 .insightsList {
-    color: #4C5064;
+    /* color: #4C5064; */
+    list-style-type: symbols(•);
     font-family: 'Raleway', sans-serif;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
     line-height: 40px;
     letter-spacing: -2%;
@@ -715,7 +723,6 @@ li {
     padding-top: 10%;
     padding-bottom: 10%;
 }
-
 
 
 
