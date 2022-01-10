@@ -845,3 +845,206 @@ button:hover {
     align-items: center;
     padding: 0.5rem 2rem;
 }
+
+
+
+/* Media Queries Media Queries Media Queries Media Queries Media Queries */
+/* Media Queries Media Queries Media Queries Media Queries Media Queries */
+/* Media Queries Media Queries Media Queries Media Queries Media Queries */
+@media only screen and (max-width: 600px) {
+/* CSS styles for grid template area here  */
+
+
+
+
+    /* PROJECT OVERVIEW section  */
+    .EducateYaAbout {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .projectOverview {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .theProblem {
+        width: 100%;
+    }
+
+    .theSolution {
+        width: 100%;
+    }
+
+
+    /* OUR TEAM section  */
+    .teamCopy {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .teamCopy .copy {
+        width: 100%;
+    }
+
+
+    /* UX RESEARCH section  */
+    #UXresearch {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .researchCopy1 {
+        order: 1;
+    }
+
+    .researchImg1 {
+        order: 2;
+    }
+
+    .researchImg2 {
+        order: 3;
+    }
+
+    .researchImg3 {
+        order: 4;
+    }
+
+    .researchCopy2 {
+        order: 5;
+    }
+
+    .researchRow {
+        display: flex
+        flex-direction: column;
+    }
+
+
+    /* DEFINITION section  */
+    #definition {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* IDEATION section  */
+
+    #ideation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ideationCopy1 {
+        order: 1;
+    }
+
+    .EYstoryboard1 {
+        order: 2;
+    }
+
+    .EYstoryboard2 {
+        order: 3;
+    }
+
+    .EYstoryboard3 {
+        order: 4;
+    }
+
+    .EYstoryboard4 {
+        order: 5;
+    }
+
+    #h1ideation {
+        order: 6;
+    }
+
+    .EYstoryboard5 {
+        order: 7;
+        transform: scale(.75);
+    }
+
+    .ideationCopy2 {
+        order: 8;
+    }
+
+
+
+    /* PROTOTYPING section  */
+    #prototyping {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .earlyPrototyping {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .UIstyleGuide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .UIstyleGuide {
+        transform: scale(.95);
+    }
+
+
+
+    /* USABILITY TESTING section  */
+    .usabilityTestingGrid {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .usabilityImg {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* FINAL PROTOTYPE section  */
+    .desktopMockup {
+        position: relative;
+        z-index: -1;
+    }
+
+    .mobileMockup {
+        position: relative;
+        right: 0px;
+        margin-left: -60%;
+        margin-top: 3rem;
+    }
+
+    .prototypeButtons {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding-left: 5%;
+        padding-top: 5%;
+        padding-bottom: 0px;
+        height: 200px;
+    }
+
+    /* FOOTER */
+    #footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerResume {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer button {
+        justify-content: center;
+    }
+
+}
