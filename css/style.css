@@ -8,6 +8,19 @@ h1 {
     text-transform: uppercase;
     text-align: center; 
     margin-left: 2rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.h2intro {
+    color: #4C5064;
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 68px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: center;
 }
 
 h2 {
@@ -16,6 +29,8 @@ h2 {
     font-size: 60px;
     font-weight: 800;
     line-height: 68px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 /* dark red hex #540408 
 gray hex #4c5064*/
@@ -110,33 +125,6 @@ strong {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 14px;
-}
-
-.footerh1 {
-    color: #F1F0F4;
-    text-align: left;
-    line-height: 16px;
-    padding-left: 3rem;
-}
-
-.footerh6 {
-    color: #F1F0F4;
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 28px;
-    letter-spacing: -2%;
-}
-
-#footerText {
-    color: #F1F0F4;
-    font-family: 'Inter'; sans-serif;
-    font-size: 12px;
-    font-weight: normal;
-    line-height: 16px;
-    padding-left: 3rem;
-    /* why is the copyright footer text not centered? */
-    justify-content: center;
 }
 
 #h2.h2rightAlign {
@@ -711,7 +699,7 @@ button:hover {
     margin-left: 2rem;
     margin-right: 2rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 770px 300px;
+    grid-template-rows: 720px 280px;
     grid-template-areas: 
     "desktopMockup desktopMockup"
     "prototypeButtons mobileMockup"
@@ -722,13 +710,15 @@ button:hover {
 .desktopMockup {
     position: relative;
     z-index: -1;
+    transform: scale(0.75);
 }
 
 .mobileMockup {
     position: absolute;
     right: 0px;
     margin-right: 2%;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    transform: scale(0.75);
 }
 
 .prototypeButtons {
@@ -736,10 +726,10 @@ button:hover {
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
-    padding-left: 25%;
-    padding-top: 5%;
+    padding-left: 20%;
+    padding-top: 0px;
     padding-bottom: 0px;
-    height: 200px;
+    height: 160px;
 }
 
 
@@ -790,14 +780,58 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 1rem;
+    grid-template-rows: 1.75fr 0.25fr;
+    grid-template-areas: 
+        "footerh1 connectIcons footerResume"
+        "#footerText #footerText #footerText"
+        ;
     align-items: center;
     justify-content: space-evenly;
 }
+
+/* .footerh1 {
+    grid-area: footerh1;
+} */
 
 .connectIcons {
     display: flex;
     flex-direction: column;
     padding-left: 2rem;
+    /* grid-area: connectIcons; */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footerResume {
+    /* grid-area: footerResume; */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footerh1 {
+    color: #F1F0F4;
+    text-align: left;
+    /* line-height: 16px; */
+    padding-left: 2rem;
+}
+
+.footerh6 {
+    color: #F1F0F4;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -2%;
+}
+
+#footerText {
+    color: #F1F0F4;
+    font-family: 'Inter'; sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+/* Why can't I get this p id div to center across the entire width?  */
+    margin-left: 4rem;
 }
 
 .emailWithIcon {
@@ -821,6 +855,10 @@ button:hover {
 .LinkedInText {
     color: #F1F0F4;
     padding-left: 2rem;
+}
+
+#buttonResume {
+    margin-left: 3.75rem;
 }
 
 .footer button {
@@ -848,14 +886,13 @@ button:hover {
 
 
 
+
+
+
 /* Media Queries Media Queries Media Queries Media Queries Media Queries */
 /* Media Queries Media Queries Media Queries Media Queries Media Queries */
 /* Media Queries Media Queries Media Queries Media Queries Media Queries */
 @media only screen and (max-width: 600px) {
-/* CSS styles for grid template area here  */
-
-
-
 
     /* PROJECT OVERVIEW section  */
     .EducateYaAbout {
@@ -1012,6 +1049,7 @@ button:hover {
     .desktopMockup {
         position: relative;
         z-index: -1;
+        transform: scale(.60);
     }
 
     .mobileMockup {
@@ -1019,6 +1057,7 @@ button:hover {
         right: 0px;
         margin-left: -60%;
         margin-top: 3rem;
+        transform: scale(.60);
     }
 
     .prototypeButtons {
@@ -1033,18 +1072,30 @@ button:hover {
     }
 
     /* FOOTER */
-    #footer {
+    .footer {
         display: flex;
         flex-direction: column;
     }
 
+    .footerh1 {
+        text-align: center;
+    }
+
+    .connectIcons {
+        text-align: center;
+    }
+
     .footerResume {
         margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
+        text-align: center;
     }
 
     .footer button {
-        justify-content: center;
+        text-align: center;
     }
 
+    #footerText {
+        text-align: center;
+    }
 }
