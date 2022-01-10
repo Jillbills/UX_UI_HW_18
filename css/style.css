@@ -140,7 +140,7 @@ button {
     color: #c61f4b;
     box-sizing: border-box;
     background-color: transparent;
-    font-style: 'Inter'; sans-serif;
+    font-style: 'Inter', "sans-serif";
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.5rem;
@@ -161,7 +161,7 @@ button:hover {
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
-    font-style: 'Inter'; sans-serif;
+    font-style: 'Inter', "sans-serif";
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.5rem;
@@ -213,8 +213,11 @@ button:hover {
     line-height: 1.75rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     vertical-align: middle; 
-    text-decoration-style:none;
     margin-top: 0.5rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -617,9 +620,9 @@ button:hover {
     margin-right: 2rem;
 }
 
-.IACopy {
+/* .IACopy {
     width: 80%;
-}
+} */
 
 .userFlowImg {
     display: flex;
@@ -763,17 +766,6 @@ button:hover {
 
 
 
-
-
-/* FLEXBOX Styles */
-
-
-
-
-
-
-
-
 /* FOOTER Styles */
 .footer {
     background-color: #6667AB;
@@ -826,7 +818,7 @@ button:hover {
 
 #footerText {
     color: #F1F0F4;
-    font-family: 'Inter'; sans-serif;
+    font-family: 'Inter', "sans-serif";
     font-size: 12px;
     font-weight: normal;
     line-height: 16px;
@@ -894,16 +886,42 @@ button:hover {
 /* Media Queries Media Queries Media Queries Media Queries Media Queries */
 @media only screen and (max-width: 600px) {
 
+    .logo {
+        margin-left: 0.5rem;
+    }
+/* Should actually create a menu icon that leads to mobile menu instead  */
+    .topNav {
+        margin-right: 0.5rem;
+    }
+
+    h1 {
+        margin-left: 0.5rem;
+    }
+
+
+
     /* PROJECT OVERVIEW section  */
     .EducateYaAbout {
         display: flex;
         flex-direction: column;
+        margin-top: -15%;
     }
 
+    .educateYaPrototype {
+        transform: scale(0.75);
+        margin-left: -14%;
+    }
+
+    .educateYaSummary {
+        margin-left: 0px;
+        width: 100%;
+        margin-top: -10%;
+    }
 
     .projectOverview {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .theProblem {
@@ -925,9 +943,63 @@ button:hover {
         width: 100%;
     }
 
+    /* DESIGN PHASES ICONS section  */
+    .designPhasesIcons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "phaseIcon01 phaseIcon02"
+            "phaseIcon03 phaseIcon04"
+            "phaseIcon05 phaseIcon06"
+            ;
+        margin-top: 3rem;
+    }
+
+    .phaseIcon01 {
+        grid-area: phaseIcon01;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 1rem;
+    }
+
+    .phaseIcon02 {
+        grid-area: phaseIcon02;
+        margin-left: 1rem;
+    }
+
+    .phaseIcon03 {
+        grid-area: phaseIcon03;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 1rem;
+    }
+
+    .phaseIcon04 {
+        grid-area: phaseIcon04;
+        margin-left: 1rem;
+    }
+
+    .phaseIcon05 {
+        grid-area: phaseIcon05;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 1rem;
+    }
+
+    .phaseIcon06 {
+        grid-area: phaseIcon06;
+        margin-left: 1rem;
+    }
+
 
     /* UX RESEARCH section  */
     #UXresearch {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .UXresearchGrid {
         display: flex;
         flex-direction: column;
     }
@@ -938,14 +1010,17 @@ button:hover {
 
     .researchImg1 {
         order: 2;
+        transform: scale(.75);
     }
 
     .researchImg2 {
         order: 3;
+        transform: scale(.75);
     }
 
     .researchImg3 {
         order: 4;
+        transform: scale(.75);
     }
 
     .researchCopy2 {
@@ -953,8 +1028,12 @@ button:hover {
     }
 
     .researchRow {
-        display: flex
+        display: flex;
         flex-direction: column;
+    }
+
+    .protoPersonaImg {
+        transform: scale(0.40);
     }
 
 
@@ -962,6 +1041,15 @@ button:hover {
     #definition {
         display: flex;
         flex-direction: column;
+    }
+
+    .definitionRow {
+        flex-direction: column;
+    }
+
+    .lightbulbImg {
+        margin-left: 0px;
+        margin-top: 2rem;
     }
 
 
@@ -972,24 +1060,36 @@ button:hover {
         flex-direction: column;
     }
 
+    .ideationGrid {
+        display: flex;
+        flex-direction: column;
+    }
+
     .ideationCopy1 {
         order: 1;
     }
 
     .EYstoryboard1 {
         order: 2;
+        transform: scale(0.80);
     }
 
     .EYstoryboard2 {
         order: 3;
+        transform: scale(0.80);
     }
 
     .EYstoryboard3 {
         order: 4;
+        transform: scale(0.80);
     }
 
     .EYstoryboard4 {
         order: 5;
+        grid-area: EYstoryboard4;
+        animation: spin2 5s;
+        animation-iteration-count: 25;
+        transform: scale(0.80);
     }
 
     #h1ideation {
@@ -998,12 +1098,27 @@ button:hover {
 
     .EYstoryboard5 {
         order: 7;
-        transform: scale(.75);
+        transform: scale(.40);
     }
-
+/* Not sure why this is out of sequence. According to this order, it should be last.  */
     .ideationCopy2 {
         order: 8;
     }
+
+    @keyframes spin2 {
+        from {
+        transform: rotate(0deg) scale(.80);
+        }
+        50% {
+        transform: rotate(360deg) scale(.80);
+        }
+        75% {
+        transform: rotate(-5deg) scale(.80);
+        }
+        to {
+        transform: rotate(0deg) scale(.80);
+        }
+      }
 
 
 
@@ -1046,18 +1161,34 @@ button:hover {
 
 
     /* FINAL PROTOTYPE section  */
+    .finalPrototypeGrid {
+        display: grid;
+        position: relative;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 560px 220px;
+        grid-template-areas: 
+        "desktopMockup desktopMockup"
+        "prototypeButtons mobileMockup"
+        ;
+    }
+    
     .desktopMockup {
         position: relative;
         z-index: -1;
-        transform: scale(.60);
+        transform: scale(.40);
+        margin-left: -30%;
+        margin-top: -10%;
     }
 
     .mobileMockup {
         position: relative;
         right: 0px;
-        margin-left: -60%;
-        margin-top: 3rem;
-        transform: scale(.60);
+        margin-left: -235%;
+        /* margin-top: 2rem; */
+        transform: scale(.40);
+        margin-top: -20%;
     }
 
     .prototypeButtons {
@@ -1065,10 +1196,12 @@ button:hover {
         grid-row-end: 3;
         grid-column-start: 1;
         grid-column-end: 2;
-        padding-left: 5%;
-        padding-top: 5%;
+        padding-left: 1%;
+        padding-top: 0px;
         padding-bottom: 0px;
-        height: 200px;
+        height: 120px;
+        padding-right: 10px;
+        width: 75%;
     }
 
     /* FOOTER */
@@ -1079,6 +1212,7 @@ button:hover {
 
     .footerh1 {
         text-align: center;
+        padding-top: 2rem;
     }
 
     .connectIcons {
