@@ -10,7 +10,15 @@ h1 {
     margin-left: 2rem;
     margin-block-start: 0;
     margin-block-end: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
+
+.h1intro {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+}
+
 
 .h2intro {
     color: #4C5064;
@@ -21,6 +29,7 @@ h1 {
     margin-block-start: 0;
     margin-block-end: 0;
     text-align: center;
+    margin-bottom: 5rem;
 }
 
 h2 {
@@ -169,10 +178,10 @@ button:hover {
     margin-right: 1rem;
     /* transition: background-color 0.5s ease-in; */
     /* Use these properties below??? */
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 
@@ -227,6 +236,7 @@ a {
 .caseStudyIntro {
     display: flex;
     flex-direction: column;
+    margin-bottom: 3rem; 
 }
 
 .EducateYaAbout {
@@ -234,6 +244,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     margin-left: 3rem;
+    margin-bottom: 3rem; 
 }
 
 .educateYaPrototype {
@@ -280,6 +291,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     margin-left: 3rem;
+    margin-bottom: 3rem; 
 }
 
 .teamCopy {
@@ -303,6 +315,14 @@ a {
 
 
 /* DESIGN TOOLS and PHASES section */
+.designPhases {
+    padding-bottom: 12rem;
+}
+
+.designTools {
+    margin-bottom: 8rem; 
+} 
+
 .designToolsIcons {
     text-align: center;
     margin-right: 2rem;
@@ -385,10 +405,15 @@ a {
 
 
 /* UX RESEARCH section */
+#UXresearch {
+    padding-bottom: 8rem;
+}
+
 .h1UXresearch {
     text-align: left;
     margin-block-start: 0;
     margin-block-end: 0;
+    padding-bottom: 1rem;
 }
 
 .UXresearchGrid {
@@ -400,7 +425,8 @@ a {
     grid-template-areas: 
     "researchImg1 researchCopy1"
     "researchImg2 researchCopy2"
-    "researchImg3 researchCopy2"
+    "researchImg3 researchCopy2";
+    padding-bottom: 3rem;
 }
 
 .researchImg1 {
@@ -453,6 +479,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 3rem;
 }
 
 /* This insights list font size is same as h5  */
@@ -490,10 +517,15 @@ a {
 
 
 /* DEFINITION section */
+#definition {
+    padding-bottom: 8rem;
+}
+
 .h1Definition {
     text-align: left;
     margin-block-start: 0;
     margin-block-end: 0;
+    padding-bottom: 1rem;
 }
 
 .definitionRow {
@@ -521,10 +553,15 @@ a {
 
 
 /* IDEATION section */
+#ideation {
+    padding-bottom: 8rem;
+}
+
 .h1Ideation {
     text-align: left;
     margin-block-start: 0;
     margin-block-end: 0;
+    padding-bottom: 1rem;
 }
 
 .ideationGrid {
@@ -608,18 +645,24 @@ a {
     text-align: left;
     margin-block-start: 0;
     margin-block-end: 0;
+    padding-bottom: 1rem;
 }
 
-.prototyping {
+#prototyping {
     display: flex;
     flex-direction: column;
+    padding-bottom: 8rem;
 }
 
 .prototypeFlexbox {
     margin-left: 2rem;
     margin-right: 2rem;
+    padding-bottom: 2rem;
 }
 
+.earlyPrototyping {
+    padding-bottom: 1rem;
+}
 /* .IACopy {
     width: 80%;
 } */
@@ -650,10 +693,15 @@ a {
 
 
 /* USABILITY TESTING section */
+#usabilityTesting {
+    padding-bottom: 8rem;
+}
+
 .h1UsabilityTesting {
     text-align: left;
     margin-block-start: 0;
     margin-block-end: 0;
+    padding-bottom: 1rem;
 }
 
 .usabilityTestingGrid {
@@ -694,6 +742,7 @@ a {
     text-align: left;
     margin-block-start: 0;
     margin-block-end: 0;
+    padding-bottom: 1rem;
 }
 
 .finalPrototypeGrid {
@@ -742,11 +791,13 @@ a {
     text-align: left;
     margin-block-start: 0;
     margin-block-end: 0;
+    padding-bottom: 1rem;
 }
 
 .conclusion {
     display: flex;
     flex-direction: column;
+    padding-bottom: 8rem;
 }
 
 .h1ThankYou {
@@ -754,6 +805,7 @@ a {
     margin-right: 2rem;
     margin-block-start: 0;
     margin-block-end: 0;
+    margin-top: 3rem;
 }
 
 .h4ThankYou {
@@ -854,7 +906,6 @@ a {
 }
 
 .footer button {
-/* I want to center this in the div */
     border: 3px solid #ECE5BA;
     border-radius: 4px;
     color: #ECE5BA;
