@@ -234,9 +234,10 @@ a {
 /* PROJECT OVERVIEW section */
 /* Project Intro and About Educate Ya */
 .caseStudyIntro {
+    background-color: #F1F0F4;
     display: flex;
     flex-direction: column;
-    margin-bottom: 3rem; 
+    padding-bottom: 3rem; 
 }
 
 .EducateYaAbout {
@@ -287,11 +288,14 @@ a {
 
 /* OUR TEAM section */
 .ourTeam {
+    background-color: #F1F0F4;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 3rem;
-    margin-bottom: 3rem; 
+    padding-top: 2rem; 
+    padding-bottom: 2rem; 
+    padding-left: 3rem;
+    margin-bottom: 2rem;
 }
 
 .teamCopy {
@@ -406,6 +410,8 @@ a {
 
 /* UX RESEARCH section */
 #UXresearch {
+    background-color: #F1F0F4;
+    padding-top: 2rem;
     padding-bottom: 8rem;
 }
 
@@ -480,6 +486,7 @@ a {
     flex-direction: row;
     justify-content: center;
     padding-bottom: 3rem;
+    transform: scale(0.88);
 }
 
 .userInterviews {
@@ -522,6 +529,7 @@ a {
 
 /* DEFINITION section */
 #definition {
+    padding-top: 2rem;
     padding-bottom: 8rem;
 }
 
@@ -549,7 +557,6 @@ a {
 }
 
 .lightbulbImg {
-    width: 40%;
     margin-left: 3rem;
     margin-right: 2rem;
 }
@@ -558,6 +565,8 @@ a {
 
 /* IDEATION section */
 #ideation {
+    background-color: #F1F0F4;
+    padding-top: 2rem;
     padding-bottom: 8rem;
 }
 
@@ -570,9 +579,9 @@ a {
 
 .ideationGrid {
     display: grid;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     margin-right: 2rem;  
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% 40%;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
     "EYstoryboard1 ideationCopy1"
@@ -619,13 +628,10 @@ a {
     margin-block-end: 0;
 }
 
+/* Need to constrain this img size too  */
 .EYstoryboard5 {
-    margin-left: 2rem; 
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
-
-    /* transform: scale(0.80); */
 }
 
 @keyframes spin2 {
@@ -655,6 +661,7 @@ a {
 }
 
 #prototyping {
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     padding-bottom: 8rem;
@@ -666,37 +673,37 @@ a {
     padding-bottom: 2rem;
 }
 
-.earlyPrototyping {
-    padding-bottom: 1rem;
-}
-
-.userFlowImg {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 .sketchesCopy {
     margin-right: 2rem;
 }
 
 .earlyPrototyping {
+    padding-bottom: 3rem;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
 }
 
-.UIstyleGuide {
+#EYpaperSketches {
+    margin-bottom: 2rem;
+}
+
+#EYwireframes {
+    /* Scale these images smaller or place in div side by side? Image quality too low for it to be this large  */
+}
+
+/* .userFlowImg {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
+} */
 
 
 
 
 /* USABILITY TESTING section */
 #usabilityTesting {
+    background-color: #F1F0F4;
+    padding-top: 2rem;
     padding-bottom: 8rem;
 }
 
@@ -709,8 +716,6 @@ a {
 
 .usabilityTestingGrid {
     display: grid;
-    margin-left: 2rem;
-    margin-right: 2rem;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     grid-template-areas: 
@@ -721,20 +726,28 @@ a {
 
 .usabilityTestingCopy {
     grid-area: usabilityTestingCopy;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
+/* Still trying to get these images to stay within the webpage but remain side by side  */
 .usabilityTestingMobile {
     grid-area: usabilityTestingMobile;
+    border: 2px solid red;
+    margin-left: 0;
 }
 
 .usabilityTestingDesktop {
     grid-area: usabilityTestingDesktop;
+    border: 2px solid red;
 }
 
 .usabilityImg {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    border: 2px solid red;
+    margin-left: 0px;
 }
 
 
@@ -742,6 +755,7 @@ a {
 
 /* FINAL PROTOTYPE section */
 .h1FinalPrototype {
+    padding-top: 2rem;
     text-align: left;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -791,18 +805,23 @@ a {
 
 /* CONCLUSION section */
 .h1Conclusion {
+    background-color: #F1F0F4;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
     text-align: left;
     margin-block-start: 0;
     margin-block-end: 0;
-    padding-bottom: 1rem;
+    margin-left: 0;
 }
 
 .conclusion {
+    background-color: #F1F0F4;
     display: flex;
     flex-direction: column;
     padding-bottom: 8rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .h1ThankYou {
