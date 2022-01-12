@@ -325,7 +325,7 @@ a {
 
 .designToolsIcons {
     text-align: center;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
 }
 
 .h1DesignPhases {
@@ -338,7 +338,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    transform: scale(1.25);
+    /* Do NOT add this >>> transform: scale(1.25); <<< this was the problem causing the gap on the right column */
     /* transition: all 0.3s  ease-in-out; */
 }
 /* .phaseIcon01 {
@@ -482,6 +482,10 @@ a {
     padding-bottom: 3rem;
 }
 
+.userInterviews {
+    margin-right: 2rem;
+}
+
 /* This insights list font size is same as h5  */
 .insightsList {
     /* color: #4C5064; */
@@ -567,7 +571,7 @@ a {
 .ideationGrid {
     display: grid;
     margin-left: 2rem;
-    margin-right: 2rem;
+    margin-right: 2rem;  
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
@@ -597,12 +601,12 @@ a {
 
 .ideationCopy1 {
     grid-area: ideationCopy1;
-    padding-left: 2rem;
+    /* padding-left: 2rem;  */
 }
 
 .ideationCopy2 {
     grid-area: ideationCopy2;
-    padding-left: 2rem;
+    /* padding-left: 2rem;  */
 }
 
 .ideationList {
@@ -616,10 +620,12 @@ a {
 }
 
 .EYstoryboard5 {
-    margin-left: 2rem;
+    margin-left: 2rem; 
     display: flex;
     flex-direction: row;
     /* justify-content: center; */
+
+    /* transform: scale(0.80); */
 }
 
 @keyframes spin2 {
@@ -663,9 +669,6 @@ a {
 .earlyPrototyping {
     padding-bottom: 1rem;
 }
-/* .IACopy {
-    width: 80%;
-} */
 
 .userFlowImg {
     display: flex;
@@ -674,7 +677,7 @@ a {
 }
 
 .sketchesCopy {
-    width: 80%;
+    margin-right: 2rem;
 }
 
 .earlyPrototyping {
@@ -798,11 +801,13 @@ a {
     display: flex;
     flex-direction: column;
     padding-bottom: 8rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .h1ThankYou {
     text-align: right;
-    margin-right: 2rem;
+    /* margin-right: 2rem;  */
     margin-block-start: 0;
     margin-block-end: 0;
     margin-top: 3rem;
@@ -811,7 +816,7 @@ a {
 .h4ThankYou {
     color: #c61f4b;
     text-align: right;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
     margin-block-start: 0;
     margin-block-end: 0;
 }
@@ -1149,7 +1154,7 @@ a {
 
     .EYstoryboard5 {
         order: 7;
-        transform: scale(.40);
+        /* transform: scale(.40); */
     }
 /* Not sure why this is out of sequence. According to this order, it should be last.  */
     .ideationCopy2 {
