@@ -10,8 +10,8 @@ h1 {
     margin-left: 2rem;
     margin-block-start: 0;
     margin-block-end: 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
 }
 
 .h1intro {
@@ -237,6 +237,7 @@ a {
     background-color: #F1F0F4;
     display: flex;
     flex-direction: column;
+    padding-top: 5rem;
     padding-bottom: 3rem; 
 }
 
@@ -293,7 +294,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     padding-top: 2rem; 
-    padding-bottom: 2rem; 
+    padding-bottom: 12rem;
     padding-left: 3rem;
     margin-bottom: 2rem;
 }
@@ -324,6 +325,7 @@ a {
 }
 
 .designTools {
+    padding-top: 5rem;
     margin-bottom: 8rem; 
 } 
 
@@ -411,8 +413,8 @@ a {
 /* UX RESEARCH section */
 #UXresearch {
     background-color: #F1F0F4;
-    padding-top: 2rem;
-    padding-bottom: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 12rem;
 }
 
 .h1UXresearch {
@@ -529,8 +531,8 @@ a {
 
 /* DEFINITION section */
 #definition {
-    padding-top: 2rem;
-    padding-bottom: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 12rem;
 }
 
 .h1Definition {
@@ -566,8 +568,8 @@ a {
 /* IDEATION section */
 #ideation {
     background-color: #F1F0F4;
-    padding-top: 2rem;
-    padding-bottom: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 12rem;
 }
 
 .h1Ideation {
@@ -661,10 +663,10 @@ a {
 }
 
 #prototyping {
-    padding-top: 2rem;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
-    padding-bottom: 8rem;
+    padding-bottom: 12rem;
 }
 
 .prototypeFlexbox {
@@ -703,8 +705,8 @@ a {
 /* USABILITY TESTING section */
 #usabilityTesting {
     background-color: #F1F0F4;
-    padding-top: 2rem;
-    padding-bottom: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 12rem;
 }
 
 .h1UsabilityTesting {
@@ -755,7 +757,7 @@ a {
 
 /* FINAL PROTOTYPE section */
 .h1FinalPrototype {
-    padding-top: 2rem;
+    padding-top: 8rem;
     text-align: left;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -773,6 +775,7 @@ a {
     "desktopMockup desktopMockup"
     "prototypeButtons mobileMockup"
     ;
+    padding-bottom: 4rem;
 }
 
 /* Trying to get my images to overlap but not over text  */
@@ -806,7 +809,7 @@ a {
 /* CONCLUSION section */
 .h1Conclusion {
     background-color: #F1F0F4;
-    padding-top: 2rem;
+    padding-top: 8rem;
     padding-bottom: 1rem;
     padding-left: 2rem;
     text-align: left;
@@ -819,7 +822,7 @@ a {
     background-color: #F1F0F4;
     display: flex;
     flex-direction: column;
-    padding-bottom: 8rem;
+    padding-bottom: 12rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
