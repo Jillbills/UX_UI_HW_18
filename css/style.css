@@ -884,6 +884,12 @@ a {
     text-align: left;
     /* line-height: 16px; */
     padding-left: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 3px;
+    padding-bottom: 0px;
+    margin-block-end: 0;
+    margin-block-start: 0;
 }
 
 .footerh6 {
