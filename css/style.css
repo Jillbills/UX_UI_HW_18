@@ -347,9 +347,6 @@ a {
     /* Do NOT add this >>> transform: scale(1.25); <<< this was the problem causing the gap on the right column */
     /* transition: all 0.3s  ease-in-out; */
 }
-/* .phaseIcon01 {
-    transform: scale(1.25);
-} */
 
 .phaseIcon01:hover {
     animation: spin 0.7s 1;
@@ -375,8 +372,6 @@ a {
     animation: spin 0.7s 1;
 }
 
-
-
 @keyframes spin {
     from {
     transform: rotate(0deg) scale(1.25);
@@ -395,19 +390,6 @@ a {
     }
   }
 
-
-/* 
-  @keyframes bounceArrow {
-    from {
-      margin-top: 0px;
-    }
-    50% {
-      margin-top: 7px;
-    }
-    to {
-      margin-top: 0px;
-    }
-  }  */
 
 
 /* UX RESEARCH section */
